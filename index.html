@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bf71199453.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header id="header">
+       
+        <div class="container">
+            <nav class="links">
+                <h2 class="logo"><span class="span">J</span>Codes.</h2>
+                <ul id="sidemenu">
+                    <li><a class="link" href="#header">Home</a></li>
+                    <li> <a class="link" href="#about">About</a></li>
+                    <li> <a class="link" href="#portfolio">Projects</a></li>
+                    <li> <a class="link" href="#contact">Contact</a></li>
+                    <li><a class="link" href="/resume.html">Resume</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+             
+            <div class="ImageTextContainer">
+                <div class="piclineContainer">
+                    <img class="profilepic" src="/Images/profilepic.jpeg" alt="My pic">
+                    <div class="underline"></div>
+                    <div class="underline2"></div>
+                </div>
+                    <div class="mainTextContainer">
+                        <div class="headingContainer">
+                            <h1><span class="span">Hi,</span> I am Joy Onweani</h1>
+                        </div>
+                        <div class="TextContainer">
+                            <p class="headingText">A Front-End Developer, with keen interest in building user-centric UI and bringing product ideas to life.</p>
+                        </div> 
+                </div>
+            </div>
+            <div class="btnContainer">
+                <a href="#about"><button class="headerBtn"> Learn More</button></a>                
+                <a href="Images/JOY-ONWEANI'S-2022-CV.pdf" download><button class="headerBtn1">Download CV</button></a>
+            </div>
+           
+           
+        </div>
+    </header>
+    <div class="main">
+        <!-- About -->
+        <div class="about" id="about">
+                <div class="aboutContainer" >
+                    
+                    <div class="aboutHeading">
+                    <h1 class="span">About Me</h1>
+                    <p class="aboutPara"> I am a consistent problem-solver, skilled at prioritizing and managing projects with proficiency. I contribute problem-solving, teamwork, and debugging toward team efforts and business improvements. I am progress minded and in tune with new developments in my field. I am effective and collaborative with strong communication talents. I enjoy collective brainstorming sessions which allow me to coordinate activities to achieve a common goal.</p>
+                    <div class="aboutLinks">
+                        <h2 class="span tabtitles active" onclick="opentab('skills')">Skills</h2>
+                        <h2 class="span tabtitles" onclick="opentab('technologies')" >Technologies</h2>
+                    </div>
+                    <div class="tabContents activetab" id="skills">
+                        <ul>
+                            <li> <span>Web Development</span> <br> Web App Development </li>
+                            <li> <span>Mobile Development</span> <br> Android App Development(In-view) </li>
+                        </ul>
+                    </div> <div class="tabContents" id="technologies">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>ReactJS</li>
+                            <li>Bootstrap</li>
+                            <li>Tailwind</li>
+                        </ul>
+                    </div>
+
+                    </div>
+                    <div class="aboutImageCon">
+                        <img class="aboutImage" src="/Images/AboutMe.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+        <!-- .........Services........ -->
+        <div class="services">
+            <div class="container">
+                    <h1 class="subTitle">My Services</h1>
+                    <div class="servicesList">
+                        <div>
+                            <i class="fa-regular fa-code"></i>
+                            <h3>Web Design</h3>
+                            <p>Creative design of user friendly web interface with fascinating functionality</p>
+                        </div>
+                        <div>
+                            <i class="fab fa-app-store"></i>
+                            <h3>App Design</h3>
+                            <p>Transforming native applications into mobile-friendly products.</p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-figma"></i>
+                            <h3>UI Improvement</h3>
+                            <p>Designing and updating layouts to meet usability and performance requirements.</p>
+                        </div>
+                    </div>
+                    </div>
+        </div>
+         <!-- my Portfolio -->
+        <div id="portfolio">
+            <div class="container">
+                <div class="subTitle">
+                    <h1>My Works</h1>
+                    <div class="workList">
+                        <div class="work">
+                            <img class="wrk" src="/Images/Work1.PNG">
+                            <div class="layer">
+                                <h4>Huddle Landing Page</h4>
+                                <p>Replicated UI design from Frontend Mentor</p>
+                                <a href="https://github.com/joyamakacodes/Huddle-Landing-Page/tree/master"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img class="wrk" src="/Images/work2.PNG">
+                            <div class="layer">
+                                <h4>E-commerce Website</h4>
+                                <p>Men's shoe e-commerce Website</p>
+                                <a href="https://github.com/joyamakacodes/Huddle-Landing-Page/tree/master"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img class="wrk" src="/Images/work3.PNG">
+                            <div class="layer">
+                                <h4>RockPaperScissors</h4>
+                                <p>Rock Paper and scissors game</p>
+                                <a href="https://github.com/joyamakacodes/RockPaperScissors/tree/master"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img class="wrk" src="/Images/work9.JPG">
+                            <div class="layer">
+                                <h4>E-Commerce Website</h4>
+                                <p>Female clothes Collection e-commerce website</p>
+                                <a href="https://github.com/joyamakacodes/Female-clothing-Ecommerce/tree/master"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img class="wrk" src="/Images/work4.PNG">
+                            <div class="layer">
+                                <h4>NUPAT Tech. Website</h4>
+                                <p>Company's website redesign team project</p>
+                                <a href="https://github.com/joyamakacodes/Nupat-website-redesign/branches"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img class="wrk" src="/Images/work6.JPG">
+                            <div class="layer">
+                                <h4>Calculator</h4>
+                                <p>Web app calculator </p>
+                                <a href="https://github.com/joyamakacodes/simple-calculator/tree/master"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img class="wrk" src="/Images/work5.JPG">
+                            <div class="layer">
+                                <h4>Biography Website</h4>
+                                <p>Celibrity Biography website</p>
+                                <a href="https://github.com/joyamakacodes/Biography"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img class="wrk" src="/Images/work8.JPG">
+                            <div class="layer">
+                                <h4>EasyBank Landing Page</h4>
+                                <p>Replicated UI design from Frontend Mentor</p>
+                                <a href="https://github.com/joyamakacodes/EasyBank-/tree/master"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="https://github.com/joyamakacodes" class="workBtn">See More</a>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="contactrow">
+                    <div class="contactLeft">
+                        <h1>Contact Me</h1>
+                        <p> <i class="fas fa-paper-plane"></i> joyamaka1995@gmail.com</p>
+                        <p> <i class="fas fa-phone-square-alt"></i> 08166101547</p>
+                        <div class="socialIcons">
+                            <a href="https://www.facebook.com/onweani.joy.9"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/OnweaniJoy"> <i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.instagram.com/onweanijoy/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/joy-onweani-16b9171b1/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="contactRight">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <br>
+                            <button type="submit" class="contactBtn">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>Copyright &copy; <span class="copyspan">Joy Onweani</span>. Made with <i class="fas fa-heart"></i> by <span class="logo"><span class="span">J</span>Codes.</span></p>
+        </div>
+    </div>
+    
+ 
+
+    <script>
+        let tablinks = document.getElementsByClassName('tabtitles');
+        let tabcontents=  document.getElementsByClassName('tabContents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('activetab');
+            }
+            event.currentTarget.classList.add('active')
+            document.getElementById(tabname).classList.add('activetab');
+        }
+    </script>
+    <script>
+        let sidemenu = document.getElementById('sidemenu');
+        function openmenu(){
+            sidemenu.style.right = '0'
+        };
+        function closemenu(){
+            sidemenu.style.right = '-200px'
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzpKoSLfz-GcasF7-ctQQQ3-N1rgyLpSQDqYs2nYMA0s44r3FQOjqflWkdIW_sp-hHp/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = " Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        }
+          
+        )
+      </script>
+</body>
+</html>

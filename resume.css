@@ -1,0 +1,123 @@
+.resumeContainer{
+    border: 3px solid rgb(122, 192, 17);
+    padding: 2em;
+    margin: 2em;
+}
+.resumeHead{
+    background-color: rgba(255, 255, 255, 0.062);
+    color: rgb(122, 192, 17);
+    display: inline-block;
+    margin: 0 15em;
+    padding: 1em;
+}
+.resumeHead span{
+    font-size: 25px;
+}
+.resumeSummary{
+    width: 60%;
+    margin: 2em 15em;
+    line-height: 20px;
+}
+.WorkExEdCon{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+.WorkExEdCon h2, h4{
+    color: rgb(122, 192, 17);
+}
+.WorkEx{
+    flex-basis: 50%;
+}
+.edCon{
+    flex-basis: 40%;
+}
+.eduDateCon{
+    display: flex;
+    column-gap: 30px;
+    margin: 20px 0;
+}
+.school{
+    flex-basis: 50%;
+}
+.dateWork{
+    display: flex;
+    column-gap: 15px;
+    margin-top: 1em;
+}
+h2, h4{
+    color:rgb(122, 192, 17);
+}
+.ConTech{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+.contactCon{
+    flex-basis: 60%;
+}
+.techCon{
+    flex-basis: 40%;
+}
+.contactCon{
+    flex-basis: 50%;
+}
+.certComp{
+    display: flex;
+    justify-content: space-between; 
+    margin: 50px;
+}
+.certDate{
+    display: flex;
+    column-gap: 15px;
+    margin-top: 1em;
+}
+.cert{
+    flex-basis: 30%; 
+}
+.comp{
+    flex-basis: 40%;
+}
+.text-box h1{
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    .resumeContainer{
+        border: 3px solid rgb(122, 192, 17);
+        padding: 0em;
+        margin: 0em;
+    }
+    .resumeHead{
+        margin: 0 1em;
+        font-size: 25px;
+        padding: 1em;
+    }
+    .resumeHead span{
+        font-size: 20px;
+    }
+    .resumeSummary{
+        width: 90%;
+        margin: 1em;
+        line-height: 20px;
+    }
+    .WorkExEdCon{
+        display: block;
+        margin: 10px;
+    }
+    .ConTech{
+        display: block;
+        margin: 10px;
+    }
+    .certComp{
+        display: block;
+        margin: 10px;
+    }
+    
+}
+@media only screen and (max-width: 1200px){
+    .resumeHead{
+        margin: 0 10em;
+        font-size: 25px;
+        padding: 1em;
+    }
+}

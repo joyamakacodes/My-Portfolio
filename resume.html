@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/resume.css">
+    <script src="https://kit.fontawesome.com/bf71199453.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+</head>
+<body>
+        <div class="Resume">
+            <nav class="links">
+                <h2 class="logo"><span class="span">J</span>Codes.</h2>
+                <ul id="sidemenu">
+                    <li><a class="link" href="/index.html">Home</a></li>
+                    <li> <a class="link" href="/index.html#about">About</a></li>
+                    <li> <a class="link" href="/index.html#portfolio">Projects</a></li>
+                    <li> <a class="link" href="/index.html#contact">Contact</a></li>
+                    <li><a class="link" href="#">Resume</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="text-box">
+                    <h1>RESUME</h1>
+            </div>
+            <div class="resumeContainer">
+            <h1 class="resumeHead">JOY ONWEANI <br> <span> FRONT END DEVELOPER </span></h1>
+            <p class="resumeSummary">Background includes designing websites in agile environment. Exceptional team player with an analytical approach to developing useful solutions and also passion for responsive website design and a firm believer in the mobile-first approach. 
+            </p>
+            <div class="WorkExEdCon">
+                <div class="WorkEx">
+                    <h2>WORK HISTORY</h2>
+                    <div class="dateWork">
+                        <div class="date">
+                            <h4>2022-04-Current </h4>
+                        </div>
+                        <div class="workAs">
+                            <h4>Front End Developer Intern</h4>
+                            <p>NUPAT TECHNOLOGIES, Lagos</p>
+                            <h4>Job Description</h4>
+                            <ul>
+                                <li>Coded using HTML, CSS, JavaScript and ReactJS to develop features for both mobile and desktop platforms.</li>
+                                <li>Teamed on user-centric design strategy in translation of UX and business requirements into coded solutions.</li>
+                                <li>Transformed native applications into mobile-friendly products.</li>
+                                <li>Researched emerging web technologies and trends for possible incorporation into sites.</li>
+                                <li>Designed and updated layouts to meet usability and performance requirements.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="edCon">
+                    <h2>EDUCATION</h2>
+                    <div class="eduDateCon">
+                        <div>
+                           <h4 class="date">2014-12- <br> 2018-11 </h4> 
+                        </div>
+                        <div class="school">
+                            <p>Bachelors of Arts</p>
+                            <p> University of Lagos- Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="eduDateCon">
+                        <div>
+                           <h4 class="date">2006-09- <br> 2012-08 </h4> 
+                        </div>
+                        <div class="school">
+                            <p>Yewa College Ilaro, Ogun State. Nigeria</p>
+                            <p>  Senior Secondary Certificate Examination</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ConTech">
+                <div class="contactCon">
+                    <h2>CONTACT</h2>
+                    <h3>Address </h3>
+                    <p> Iyana-Ipaja, Lagos, Nigeria.</p>
+                    <h3>Phone</h3>
+                    <p>08166101547</p>
+                    <h3>E-mail</h3>
+                    <p>Joyamaka1995@gmail.com</p>
+                    <h3>LinkedIn</h3>
+                    <p>https://www.linkedin.com/in/joy-onweani-16b9171b1/</p>
+                </div>
+                <div class="techCon">
+                    <h2>TECHNICAL PROFILE</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>React JS</li>
+                        <li>GitHub & Git</li>
+                        <li>Postman </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="certComp">
+                <div class="cert">
+                    <h2>CERTIFICATION</h2>
+                    <div class="certDate">
+                        <div>
+                            <h4>2022-09 </h4>
+                        </div>
+                        <div>
+                            <p>Software Development</p>
+                            <p>NUPAT TECHNOLOGIES </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="comp">
+                    <h2>COMPETENCIES</h2>
+                    <p>CSS</p>
+                    <p>UI Improvement</p>
+                    <p>Code debugging</p>
+                    <p>Front End Web Development</p>
+                </div>
+
+            </div>
+            <a href="Images/JOY-ONWEANI'S-2022-CV.pdf" download><button class="headerBtn1">Download CV</button></a>
+            
+        </div>
+        
+
+        <script>
+            let sidemenu = document.getElementById('sidemenu');
+            function openmenu(){
+                sidemenu.style.right = '0'
+            };
+            function closemenu(){
+                sidemenu.style.right = '-200px'
+            }
+        </script>
+</body>
+</html>

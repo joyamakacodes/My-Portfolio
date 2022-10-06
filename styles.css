@@ -1,0 +1,639 @@
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+ body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Mono', monospace;
+    color: white;
+    box-sizing: border-box;
+   
+}
+
+header{
+    background-image: url(/Images/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 1em 4em;
+    height: 60vh;
+}
+.logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav .fas{
+    display: none;
+}
+.ImageTextContainer{
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    column-gap: 2em;
+}
+.mainTextContainer{
+    text-align: center;
+    width: 40%;
+    animation: firstMove2 5s;
+}
+.piclineContainer{
+   width: 50%;
+   animation: firstMove 5s ease-in;
+    
+
+}
+@keyframes firstMove {
+    0%{
+      transform: translateX(-100px);
+      
+    }
+    50%{
+      transform: translate(0);
+    }
+  }
+  @keyframes firstMove2{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+  }
+.headingContainer{
+    background-color: rgba(151, 197, 151, 0.158);
+    border-radius: 10px;
+    width: 50%;
+    
+}
+.span{
+    color: rgb(122, 192, 17);
+    font-size: 20px;
+}
+.profilepic{
+    width: 70%;
+    border-radius: 15px;
+}
+h2{
+    font-size: 20px;
+    color: white;
+    
+}
+header h1{
+    font-size: 20px;
+    background: white;
+    color: rgb(122, 192, 17);
+}
+
+.headingText{
+    width: 70%;
+    /* color: rgb(151, 250, 2); */
+    font-size: 25px;
+    text-align: start;
+}
+
+.underline{
+    border-bottom: 5px solid rgb(122, 192, 17);
+    width: 50%;
+    margin-bottom: 1em;
+    
+}
+
+.underline2{
+    border-bottom: 5px solid rgb(122, 192, 17);
+    width: 70%;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* nav{
+    position: fixed;
+} */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 50px 10px 0;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border: 2px solid rgb(122, 192, 17);
+    padding: 5px;
+    width: 5%;
+}
+.link:hover{
+    background-color: rgb(122, 192, 17);
+}
+
+.headerBtn{
+    background-color:  rgb(122, 192, 17);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 18px;
+    scroll-behavior: smooth;
+    transition: background 0.5s;
+}
+.headerBtn:hover{
+    color: rgb(122, 192, 17);
+    background: white;
+}
+.headerBtn1{
+    color: rgb(122, 192, 17);
+    background-color: white;
+    border: none;
+    padding: 15px;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 18px;
+    transition: background 0.5s;
+}
+.headerBtn1:hover{
+    background: rgb(122, 192, 17);
+    color: white;
+}
+.main{
+    background-color: black;
+    padding: 3em 0 0;
+}
+/* .............About....... */
+.aboutContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+.aboutPara{
+    color: white;
+    line-height: 30px;
+    width: 60%;
+}
+.aboutImageCon{
+    flex-basis: 50%;
+    margin-left: -10em;
+    animation: firstMove2 3s;
+}
+.aboutImage{
+    width: 70%;
+    border-radius: 15px;
+}
+.aboutHeading{
+    flex-basis: 50%;
+    width: 50%;
+    margin-left: 12em;
+}
+.aboutHeading h1{
+    font-size: 30px;
+}
+.aboutLinks{
+    display: flex;
+    column-gap: 2em;
+    margin-top: 2em;
+    cursor: pointer;
+}
+.tabtitles{
+    font-weight: 400;
+    margin-bottom: 1em;
+    position: relative;
+}
+.tabtitles::after{
+    content: '';
+    border: none;
+    width: 0;
+    height: 3px;
+    background: rgb(122, 192, 17);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.tabtitles:hover::after{
+    width: 100%;
+
+} 
+.tabtitles.active::after{
+    width: 50%;
+}
+.tabContents{
+    display: none;
+}
+.tabContents ul li{
+    list-style: none;
+    margin: 1em 0
+}
+.tabContents span{
+    color: rgb(122, 192, 17);
+}
+.tabContents.activetab{
+display: block;
+}
+/* services */
+.services{
+    background-color: black;
+    color:  rgb(122, 192, 17);
+    height: 40vh;
+}
+.subTitle{
+    color:  rgb(122, 192, 17);
+}
+.servicesList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+.servicesList div{
+    margin-top: 1em;
+    width: 50%;
+    color:  rgb(122, 192, 17);
+    /* background:  white; */
+    padding: 1em;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    border: 3px solid ;
+    
+}
+.servicesList div:hover{
+    background:  rgb(122, 192, 17);
+    color: white;
+    border: none;
+    transform: translateY(-10px);
+}
+.servicesList div h3{
+    margin: 0.5em 0;
+}
+.servicesList div h3,p:hover{
+    color: white;
+}
+.servicesList i{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+/* portfolio */
+.workList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 2em;
+}
+/* div{
+    border: 2px solid red;
+} */
+
+#portfolio h1{
+    /* margin-top: -1em; */
+    color: rgb(122, 192, 17);
+}
+ .work{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+} 
+.wrk{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transfrom 0.5s;
+}
+.work:hover .wrk{
+    transform: scale(1.1);
+}
+.layer{
+    color: white;
+    width: 80%;
+    height: 0;
+    background: linear-gradient(rgba(7, 0, 0, 0.6),  rgb(122, 192, 17));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    
+}
+.work:hover .layer{
+    height: 100%;
+}
+.layer h4{
+    border-bottom: 5px solid  rgb(122, 192, 17);
+    color: white;
+}
+.layer i{
+    background-color: white;
+    color:  rgb(122, 192, 17);
+    text-align: center;
+    border-radius: 50%;
+}
+
+.workBtn{
+    text-decoration: none;
+    margin: 3em auto;
+    width: fit-content;
+    border: 3px solid  rgb(122, 192, 17);
+    padding: 1em 2em;
+    display: block;
+    font-size: 20px;
+    color: white;
+    transition: background 0.5s;
+}
+.workBtn:hover{
+    background: rgb(122, 192, 17);
+}
+/* Contact */
+
+.contactrow{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contactLeft{ 
+    flex-basis: 35%;
+    margin-left: 2em;
+}
+.contactRight{ 
+    flex-basis: 60%;
+}
+.contactLeft p{ 
+    margin-top: 1em;
+}
+.contactLeft p i{
+    color: rgb(122, 192, 17);
+    font-size: 20px;
+    margin-right: 1em;
+}
+.socialIcons{
+    margin-top: 2em;
+    display: flex;
+}
+.socialIcons a{
+    text-decoration: none;
+    font-size: 2em;
+    margin-right: 1em;
+    display: inline-block;
+    transition: transform 0.5px;
+    color:  rgb(122, 192, 17);
+}
+.socialIcons a:hover{
+    color: white;
+    transform: translateY(-5px);
+}
+.contactRight{
+    width: 100%;
+}
+form input, form textarea{
+    outline: none;
+    background: rgba(122, 192, 17, 0.171);
+    padding: 1.5em;
+    font-size: 16px;
+    border: 0;
+    width: 75%;
+    margin: 1em 0;
+    border-radius: 10px;
+    color: white;
+}
+.contactBtn{
+    color: rgb(122, 192, 17);
+    padding: 0.5em 2em;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.contactBtn:hover{
+    background: rgb(122, 192, 17);
+    color: white;
+}
+#copyright .logo{
+    font-size: 20px;
+}
+#copyright{
+    text-align: center;
+    background: rgba(122, 192, 17, 0.171);
+    padding: 2em 0;
+    width: 100%;
+}
+.copyspan{
+    color: rgb(122, 192, 17);
+    font-weight: 500;
+}
+
+#copyright i{
+    color: rgb(122, 192, 17);
+}
+.Resume{
+    background-color: rgba(0, 0, 0);
+    height: 100%;
+    padding: 2em;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px){
+   body{
+    overflow-x: hidden;
+   }
+   nav .fas{
+    display: block;
+    font-size: 25px;
+}
+nav ul{
+    background: rgb(122, 192, 17);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 50vh;
+    padding-top: 2em;
+    z-index: 2;
+    transition: right 0.5s;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul li:hover{
+    background-color: white;
+    color: rgb(122, 192, 17);
+}
+    .ImageTextContainer{
+    margin-top: 1em;
+    display: block;
+    height: 100%;
+   }
+   header{
+    height: 75vh;
+   }
+   .headingText{
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+}
+.headingContainer{
+    text-align: center;
+    width: fit-content;
+}
+.mainTextContainer{
+    width: 70%; 
+    margin-top: 1em;
+    padding: 0 3em;
+}
+.underline{
+    border-bottom: 3px solid rgb(122, 192, 17);    
+}
+
+.underline2{
+    border-bottom: 3px solid rgb(122, 192, 17);
+}
+
+.container{
+    padding: 1em;
+}
+.headerBtn{
+    padding: 10px;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 15px;
+}
+.btnContainer{
+    padding: 0 2em 0 3em;
+    margin-top: 1em;
+}
+.headerBtn1{
+    padding: 10px;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 15px;
+}
+.profilepic{
+    width: 100%;
+}
+.piclineContainer{
+    width: 100%;
+}
+.aboutContainer{
+    display: block;
+    height: 120vh;
+}
+.aboutImageCon{
+    margin-left: 0;
+    padding-left: 2em;
+}
+.aboutImage{
+    width: 80%;
+}
+.aboutHeading{
+    padding: 0 2em;
+    width: 80%;
+    margin-left: 0;
+}
+.aboutPara{
+    color: white;
+    line-height: 20px;
+    width: 100%;
+}
+.services{
+    height: 90vh;
+}
+.servicesList{
+    display: block;
+    padding: 0 2em;
+    
+}
+.servicesList div{
+    margin: 1em;
+    width: 70%;
+}
+#portfolio .container{
+    height: 100%;
+}
+.workList{
+    display: block;
+    margin-top: 2em;
+}
+.work{
+    margin-top: 1.5em;
+}
+h1{
+    text-align: center;
+    color: rgb(122, 192, 17); ;
+}
+.contactrow{
+    display: block;
+    padding: 1em; 
+    width: 90%;
+}
+.contactLeft{
+    margin-left: 0;
+}
+.contactLeft p i{
+    margin-right: 1em;
+}
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+}
+.contactRight{
+    margin-top: 1em;
+    padding-left: 1em;
+}
+.contactBtn{
+    margin: 0 2em;
+}
+.contactLeft.socialIcons{
+    margin-right: 2em;
+}
+#contact .container{
+    height: 87%;
+}
+#copyright{
+    width: 99%;
+}
+}
+
+@media only screen and (min-width: 700px){
+    .ImageTextContainer{
+        height: 70%;
+    }
+    header{
+        width: 100%;
+        height: 50vh;
+    }
+    .aboutHeading{
+        width: 50%;
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+    .aboutPara{
+        width: 80%;
+    }
+    .aboutImage{
+        width: 100%;
+    }
+    .aboutContainer{
+        height: 60%;
+    }
+    .services{
+        height: 10%;
+    }
+    #portfolio .container{
+       height: 50%;
+    } 
+    form{
+        margin-left: 1em;
+    }
+    #contact .container{
+         height: 30%; 
+    }
+}
