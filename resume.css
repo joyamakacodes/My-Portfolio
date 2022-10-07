@@ -4,6 +4,9 @@
     margin: 2em;
     overflow-y: hidden;
 }
+.logo{
+    color: white;
+}
 .resumeHead{
     background-color: rgba(255, 255, 255, 0.062);
     color: rgb(122, 192, 17);
