@@ -291,6 +291,9 @@ display: block;
     /* margin-top: -1em; */
     color: rgb(122, 192, 17);
 }
+#portfolio .container{
+    height: 100%;
+}
  .work{
     border-radius: 10px;
     overflow: hidden;
