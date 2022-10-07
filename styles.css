@@ -524,7 +524,7 @@ nav ul li:hover{
 }
 .aboutContainer{
     display: block;
-    height: 120vh;
+    height: 125vh;
 }
 .aboutImageCon{
     margin-left: 0;
@@ -544,7 +544,7 @@ nav ul li:hover{
     width: 100%;
 }
 .services{
-    height: 90vh;
+    height: 100vh;
 }
 .servicesList{
     display: block;
