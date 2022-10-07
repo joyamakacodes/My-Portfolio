@@ -2,6 +2,7 @@
     border: 3px solid rgb(122, 192, 17);
     padding: 2em;
     margin: 2em;
+    overflow-y: hidden;
 }
 .resumeHead{
     background-color: rgba(255, 255, 255, 0.062);
@@ -114,10 +115,10 @@ h2, h4{
     }
     
 }
-@media only screen and (max-width: 1200px){
+/* @media only screen and (max-width: 1200px){
     .resumeHead{
         margin: 0 10em;
         font-size: 25px;
         padding: 1em;
     }
-}
+} */
