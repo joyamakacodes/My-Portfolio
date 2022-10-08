@@ -8,11 +8,13 @@ html{
  body{
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Nunito Sans', sans-serif;
     color: white;
     box-sizing: border-box;
+    font-size: 18px;
    
 }
+
 
 header{
     background-image: url(/Images/background.jpg);
@@ -137,7 +139,7 @@ nav ul li{
     color: white;
     border: none;
     padding: 15px;
-    font-family: 'Noto Sans Mono', monospace;
+   font-family: 'Nunito Sans', sans-serif;
     font-size: 18px;
     scroll-behavior: smooth;
     transition: background 0.5s;
@@ -151,7 +153,7 @@ nav ul li{
     background-color: white;
     border: none;
     padding: 15px;
-    font-family: 'Noto Sans Mono', monospace;
+   font-family: 'Nunito Sans', sans-serif;
     font-size: 18px;
     transition: background 0.5s;
 }
