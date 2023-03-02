@@ -14,8 +14,6 @@ html{
     font-size: 18px;
    
 }
-
-
 header{
     background-image: url(/Images/background.jpg);
     background-size: cover;
@@ -25,6 +23,7 @@ header{
 .container{
     padding: 1em 4em;
     height: 60vh;
+    margin-top: 20px;
 }
 .logo{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -241,9 +240,11 @@ display: block;
     background-color: black;
     color:  rgb(122, 192, 17);
     height: 50vh;
+    margin-top: 110px;
 }
 .subTitle{
     color:  rgb(122, 192, 17);
+    margi
 }
 .servicesList{
     display: grid;
@@ -295,6 +296,7 @@ display: block;
 }
 #portfolio .container{
     height: 70vh;
+    margin-top: 30px;
 }
  .work{
     border-radius: 10px;
@@ -361,6 +363,7 @@ display: block;
     display: flex;
     justify-content: space-between;
     width: 100%;
+
 }
 .contactLeft{ 
     flex-basis: 35%;
@@ -368,6 +371,7 @@ display: block;
 }
 .contactRight{ 
     flex-basis: 60%;
+    
 }
 .contactLeft p{ 
     margin-top: 1em;
@@ -427,7 +431,7 @@ form input, form textarea{
     background: rgba(122, 192, 17, 0.171);
     padding: 2em 0;
     width: 100%;
-    margin-top: 4em;
+    margin-top: 5em;
 }
 .copyspan{
     color: rgb(122, 192, 17);
